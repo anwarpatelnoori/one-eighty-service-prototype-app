@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SO{DD}-{MM}-{YY}--{####}",
+ "creation": "2024-12-11 13:08:36.898308",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "customer",
+  "customer_email",
+  "customer_group",
+  "customer_address",
+  "column_break_kohp",
+  "customer_type",
+  "mobile_number",
+  "customer_vat",
+  "customer_territory",
+  "multiple_asset_section",
+  "add_multiple_asset",
+  "service_section_section",
+  "service_details",
+  "total_amount",
+  "total_estimated_days",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.customer_type",
+   "fieldname": "customer_type",
+   "fieldtype": "Data",
+   "label": "Customer Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_group",
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kohp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fetch_if_empty": 1,
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "options": "Phone",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.email_id",
+   "fieldname": "customer_email",
+   "fieldtype": "Data",
+   "label": "Customer Email",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.primary_address",
+   "fieldname": "customer_address",
+   "fieldtype": "Small Text",
+   "label": "Customer Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.tax_id",
+   "fieldname": "customer_vat",
+   "fieldtype": "Int",
+   "label": "Customer VAT",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.territory",
+   "fieldname": "customer_territory",
+   "fieldtype": "Link",
+   "label": "Customer Territory",
+   "options": "Territory",
+   "read_only": 1
+  },
+  {
+   "fieldname": "service_section_section",
+   "fieldtype": "Section Break",
+   "label": "Service Section"
+  },
+  {
+   "fieldname": "service_details",
+   "fieldtype": "Table",
+   "label": "Service Details",
+   "options": "Custom Activity"
+  },
+  {
+   "fieldname": "multiple_asset_section",
+   "fieldtype": "Section Break",
+   "label": "Multiple Asset"
+  },
+  {
+   "fieldname": "add_multiple_asset",
+   "fieldtype": "Table",
+   "label": "Add Multiple Asset",
+   "options": "Custom Multiple Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Custom Sales Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_estimated_days",
+   "fieldtype": "Int",
+   "label": "Total Estimated Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-11 19:18:56.663542",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Custom Sales Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

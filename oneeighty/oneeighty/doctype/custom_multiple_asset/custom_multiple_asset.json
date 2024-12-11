@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SO{DD}-{MM}-{YY}--{####}",
+ "creation": "2024-12-11 17:08:26.740324",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_details_section",
+  "assest_name",
+  "asset_color",
+  "asset_category",
+  "asset_before_image1",
+  "asset_preview_image1",
+  "column_break_euhz",
+  "brand",
+  "size",
+  "asset_color_copy",
+  "asset_before_image2",
+  "asset_preview_image2",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_details_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Details"
+  },
+  {
+   "fieldname": "assest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assest Name"
+  },
+  {
+   "fieldname": "asset_color",
+   "fieldtype": "Data",
+   "label": "Asset Color"
+  },
+  {
+   "fieldname": "asset_color_copy",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Asset Color"
+  },
+  {
+   "fieldname": "asset_before_image1",
+   "fieldtype": "Attach Image",
+   "label": "Asset Before Image1"
+  },
+  {
+   "fieldname": "asset_preview_image1",
+   "fieldtype": "Image",
+   "label": "Asset Preview Image1",
+   "options": "asset_before_image1"
+  },
+  {
+   "fieldname": "column_break_euhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Brand",
+   "options": "Asset Brand",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Asset Category"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size"
+  },
+  {
+   "fieldname": "asset_before_image2",
+   "fieldtype": "Attach Image",
+   "label": "Asset Before Image2"
+  },
+  {
+   "fieldname": "asset_preview_image2",
+   "fieldtype": "Image",
+   "label": "Asset Preview Image2",
+   "options": "asset_before_image2"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Custom Sales Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-11 17:16:20.837627",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Custom Multiple Asset",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

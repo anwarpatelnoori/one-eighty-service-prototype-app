@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-11 12:40:05.832961",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "asset_details_section",
+  "assest_name",
+  "asset_color",
+  "asset_before_image1",
+  "asset_preview_image1",
+  "column_break_euhz",
+  "asset_brand",
+  "size",
+  "asset_before_image2",
+  "asset_preview_image2"
+ ],
+ "fields": [
+  {
+   "fieldname": "assest_name",
+   "fieldtype": "Data",
+   "label": "Assest Name"
+  },
+  {
+   "fieldname": "asset_brand",
+   "fieldtype": "Data",
+   "label": "Asset Brand"
+  },
+  {
+   "fieldname": "asset_color",
+   "fieldtype": "Data",
+   "label": "Asset Color"
+  },
+  {
+   "fieldname": "asset_before_image1",
+   "fieldtype": "Attach Image",
+   "label": "Asset Before Image1"
+  },
+  {
+   "fieldname": "asset_before_image2",
+   "fieldtype": "Attach Image",
+   "label": "Asset Before Image2"
+  },
+  {
+   "fieldname": "asset_preview_image1",
+   "fieldtype": "Image",
+   "label": "Asset Preview Image1",
+   "options": "asset_before_image1"
+  },
+  {
+   "fieldname": "asset_preview_image2",
+   "fieldtype": "Image",
+   "label": "Asset Preview Image2",
+   "options": "asset_before_image2"
+  },
+  {
+   "fieldname": "column_break_euhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Int",
+   "label": "Size"
+  },
+  {
+   "fieldname": "asset_details_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-11 12:59:18.327197",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Customer Asset",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
