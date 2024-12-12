@@ -4,12 +4,12 @@
 frappe.ui.form.on("Custom Sales Order", {
 	setup:function (frm) {
         frm.compute_total = (frm) => {
-            if (frm.doc.service_details.length>=1){
+            if (frm.doc.add_multiple_asset.length>=1){
                 let amount = 0;
                 let days = 0
-                frm.doc.service_details.forEach(price => {
-                    amount += price.amount;
-                    days += price.standard_leadtime_in_days
+                frm.doc.add_multiple_asset.forEach(price => {
+                    amount += price.cost;
+                    days += price.estd_day
                 });
                 frm.set_value('total_amount', amount);
                 frm.set_value('total_estimated_days',days)
@@ -20,26 +20,29 @@ frappe.ui.form.on("Custom Sales Order", {
             }
         };
 	},
+    get_estimated_date:function(frm){
+        frappe.call({
+            method:'oneeighty.oneeighty.doctype.custom_sales_order.custom_sales_order.get_estimated_date',
+            args:{
+                'docname':frm.doc.name,
+                'doctype':frm.doc.doctype
+            },
+            callback:function(r){
+                if(r.message){
+                    frm.set_value('estimate_date',r.message)
+                }
+            }
+        })
+    }
 });
-frappe.ui.form.on('Custom Activity', {
-    service_price: function(frm, cdt, cdn) {
-        calculate_total(frm, cdt, cdn);
+frappe.ui.form.on('Custom Multiple Asset', {
+    asset_service_required: function(frm, cdt, cdn) {
+        frm.compute_total(frm);
     },
-    quantity: function(frm, cdt, cdn) {
-        calculate_total(frm, cdt, cdn);
+    cost: function(frm, cdt, cdn) {
+        frm.compute_total(frm)
     },
-    service: function(frm,cdt,cdn){
-        calculate_total(frm, cdt, cdn);
-    },
-    service_details_remove: function (frm, cdt, cdn){
+    add_multiple_asset_remove: function (frm, cdt, cdn){
         frm.compute_total(frm)
     }
 });
-
-function calculate_total(frm, cdt, cdn) {
-    let child = locals[cdt][cdn];
-    let total_price = child.quantity * child.service_price;
-    frappe.model.set_value(cdt, cdn, 'amount', total_price);
-    frm.compute_total(frm);
-}
-

@@ -18,11 +18,20 @@
   "customer_territory",
   "multiple_asset_section",
   "add_multiple_asset",
-  "service_section_section",
-  "service_details",
   "total_amount",
   "total_estimated_days",
-  "amended_from"
+  "estimated_delivery_section",
+  "get_estimated_date",
+  "estimate_date",
+  "amended_from",
+  "section_break_tvna",
+  "column_break_inef",
+  "cleaning",
+  "fcr",
+  "spot",
+  "stiching",
+  "glue",
+  "resize"
  ],
  "fields": [
   {
@@ -96,17 +105,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "service_section_section",
-   "fieldtype": "Section Break",
-   "label": "Service Section"
-  },
-  {
-   "fieldname": "service_details",
-   "fieldtype": "Table",
-   "label": "Service Details",
-   "options": "Custom Activity"
-  },
-  {
    "fieldname": "multiple_asset_section",
    "fieldtype": "Section Break",
    "label": "Multiple Asset"
@@ -137,13 +135,76 @@
   {
    "fieldname": "total_estimated_days",
    "fieldtype": "Int",
-   "label": "Total Estimated Days"
+   "label": "Total Leadtime in Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "estimated_delivery_section",
+   "fieldtype": "Section Break",
+   "label": "Estimated Delivery"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "get_estimated_date",
+   "fieldtype": "Button",
+   "label": "Get Estimated Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "estimate_date",
+   "fieldtype": "Date",
+   "label": "Estimate Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_tvna",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "cleaning",
+   "fieldtype": "Check",
+   "label": "Cleaning"
+  },
+  {
+   "default": "0",
+   "fieldname": "fcr",
+   "fieldtype": "Check",
+   "label": "FCR"
+  },
+  {
+   "default": "0",
+   "fieldname": "spot",
+   "fieldtype": "Check",
+   "label": "SPOT"
+  },
+  {
+   "default": "0",
+   "fieldname": "stiching",
+   "fieldtype": "Check",
+   "label": "Stiching"
+  },
+  {
+   "default": "0",
+   "fieldname": "glue",
+   "fieldtype": "Check",
+   "label": "Glue"
+  },
+  {
+   "default": "0",
+   "fieldname": "resize",
+   "fieldtype": "Check",
+   "label": "Resize"
+  },
+  {
+   "fieldname": "column_break_inef",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-11 19:18:56.663542",
+ "modified": "2024-12-12 18:31:52.555452",
  "modified_by": "Administrator",
  "module": "oneeighty",
  "name": "Custom Sales Order",

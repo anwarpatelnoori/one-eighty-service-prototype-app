@@ -8,18 +8,22 @@
  "engine": "InnoDB",
  "field_order": [
   "asset_details_section",
-  "assest_name",
-  "asset_color",
+  "assest_barcode",
+  "brand",
   "asset_category",
+  "asset_color_copy",
+  "size",
+  "column_break_euhz",
+  "asset_service_required",
+  "cost",
+  "estd_day",
+  "amended_from",
+  "images_section",
   "asset_before_image1",
   "asset_preview_image1",
-  "column_break_euhz",
-  "brand",
-  "size",
-  "asset_color_copy",
+  "column_break_rrpx",
   "asset_before_image2",
-  "asset_preview_image2",
-  "amended_from"
+  "asset_preview_image2"
  ],
  "fields": [
   {
@@ -28,21 +32,11 @@
    "label": "Asset Details"
   },
   {
-   "fieldname": "assest_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Assest Name"
-  },
-  {
-   "fieldname": "asset_color",
-   "fieldtype": "Data",
-   "label": "Asset Color"
-  },
-  {
+   "columns": 1,
    "fieldname": "asset_color_copy",
    "fieldtype": "Color",
    "in_list_view": 1,
-   "label": "Asset Color"
+   "label": "Color"
   },
   {
    "fieldname": "asset_before_image1",
@@ -60,6 +54,8 @@
    "fieldtype": "Column Break"
   },
   {
+   "columns": 1,
+   "default": "Gucci",
    "fieldname": "brand",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -68,13 +64,15 @@
    "reqd": 1
   },
   {
+   "columns": 1,
    "fieldname": "asset_category",
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Asset Category"
+   "label": "Category"
   },
   {
+   "columns": 1,
    "fieldname": "size",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -100,12 +98,57 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "asset_service_required",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Required",
+   "link_filters": "[[\"Item\",\"item_group\",\"=\",\"Services\"]]",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "asset_service_required.custom_standard_lead_time_in_days",
+   "fetch_if_empty": 1,
+   "fieldname": "estd_day",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Estd Day"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "asset_service_required.standard_rate",
+   "fetch_if_empty": 1,
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost"
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "column_break_rrpx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "default": "123456QWERT",
+   "fieldname": "assest_barcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assest Barcode"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-12-11 17:16:20.837627",
+ "modified": "2024-12-12 20:46:44.481177",
  "modified_by": "Administrator",
  "module": "oneeighty",
  "name": "Custom Multiple Asset",

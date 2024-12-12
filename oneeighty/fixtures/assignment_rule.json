@@ -1,0 +1,461 @@
+[
+ {
+  "assign_condition": "resize==1",
+  "assignment_days": [
+   {
+    "day": "Monday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Tuesday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Wednesday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Thursday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Friday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Saturday",
+    "parent": "Resize",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   }
+  ],
+  "close_condition": null,
+  "description": "Resize the {{ name }}",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Assignment Rule",
+  "document_type": "Custom Sales Order",
+  "due_date_based_on": "estimate_date",
+  "field": null,
+  "last_user": "jeffery@test.com",
+  "modified": "2024-12-12 21:38:21.437730",
+  "name": "Resize",
+  "priority": 1,
+  "rule": "Round Robin",
+  "unassign_condition": null,
+  "users": [
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeffery@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeymer@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jubani@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan2@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "zaldy@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "arnel@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "muni@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "gerry@test.com"
+   },
+   {
+    "parent": "Resize",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "kannan@test.com"
+   }
+  ]
+ },
+ {
+  "assign_condition": "glue==1",
+  "assignment_days": [
+   {
+    "day": "Monday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Tuesday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Wednesday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Thursday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Friday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Saturday",
+    "parent": "Glue",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   }
+  ],
+  "close_condition": null,
+  "description": "Glue the {{ name }}",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Assignment Rule",
+  "document_type": "Custom Sales Order",
+  "due_date_based_on": "estimate_date",
+  "field": null,
+  "last_user": null,
+  "modified": "2024-12-12 21:38:21.575988",
+  "name": "Glue",
+  "priority": 1,
+  "rule": "Round Robin",
+  "unassign_condition": null,
+  "users": [
+   {
+    "parent": "Glue",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeffery@test.com"
+   },
+   {
+    "parent": "Glue",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeymer@test.com"
+   },
+   {
+    "parent": "Glue",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jubani@test.com"
+   }
+  ]
+ },
+ {
+  "assign_condition": "stiching==1",
+  "assignment_days": [
+   {
+    "day": "Monday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Tuesday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Wednesday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Thursday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Friday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Saturday",
+    "parent": "Stiching",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   }
+  ],
+  "close_condition": null,
+  "description": "Stiching the {{ name }}",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Assignment Rule",
+  "document_type": "Custom Sales Order",
+  "due_date_based_on": "estimate_date",
+  "field": null,
+  "last_user": null,
+  "modified": "2024-12-12 21:38:21.651870",
+  "name": "Stiching",
+  "priority": 1,
+  "rule": "Round Robin",
+  "unassign_condition": null,
+  "users": [
+   {
+    "parent": "Stiching",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeffery@test.com"
+   },
+   {
+    "parent": "Stiching",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeymer@test.com"
+   },
+   {
+    "parent": "Stiching",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jubani@test.com"
+   }
+  ]
+ },
+ {
+  "assign_condition": "spot==1",
+  "assignment_days": [
+   {
+    "day": "Monday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Tuesday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Wednesday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Thursday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Friday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Saturday",
+    "parent": "Spot",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   }
+  ],
+  "close_condition": null,
+  "description": "Spot the {{ name }}",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Assignment Rule",
+  "document_type": "Custom Sales Order",
+  "due_date_based_on": "estimate_date",
+  "field": null,
+  "last_user": null,
+  "modified": "2024-12-12 21:38:21.724408",
+  "name": "Spot",
+  "priority": 1,
+  "rule": "Round Robin",
+  "unassign_condition": null,
+  "users": [
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "jeymer@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan2@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "zaldy@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "arnel@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "muni@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan@test.com"
+   },
+   {
+    "parent": "Spot",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "gerry@test.com"
+   }
+  ]
+ },
+ {
+  "assign_condition": "fcr==1",
+  "assignment_days": [
+   {
+    "day": "Monday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Tuesday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Wednesday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Thursday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Friday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   },
+   {
+    "day": "Saturday",
+    "parent": "FCR",
+    "parentfield": "assignment_days",
+    "parenttype": "Assignment Rule"
+   }
+  ],
+  "close_condition": null,
+  "description": "FCR the {{ name }}",
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Assignment Rule",
+  "document_type": "Custom Sales Order",
+  "due_date_based_on": "estimate_date",
+  "field": null,
+  "last_user": "ryan2@test.com",
+  "modified": "2024-12-12 21:39:31.084742",
+  "name": "FCR",
+  "priority": 1,
+  "rule": "Round Robin",
+  "unassign_condition": null,
+  "users": [
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan2@test.com"
+   },
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "zaldy@test.com"
+   },
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "arnel@test.com"
+   },
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "muni@test.com"
+   },
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "ryan@test.com"
+   },
+   {
+    "parent": "FCR",
+    "parentfield": "users",
+    "parenttype": "Assignment Rule",
+    "user": "gerry@test.com"
+   }
+  ]
+ }
+]
