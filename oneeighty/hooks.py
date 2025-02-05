@@ -148,6 +148,12 @@ fixtures =[
 # 		"on_trash": "method"
 # 	}
 # }
+doc_events = {
+    "Client Opening Form": {
+        "after_insert": "oneeighty.oneeighty.doctype.client_opening_form.client_opening_form.create_user"
+    }
+}
+
 
 # Scheduled Tasks
 # ---------------

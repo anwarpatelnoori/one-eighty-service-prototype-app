@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-05 10:27:37.968189",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contact_number",
+  "customer_name",
+  "buissness_segment",
+  "address",
+  "column_break_fahc",
+  "email",
+  "vat_number",
+  "branch",
+  "applicable_for_points",
+  "date_of_creation"
+ ],
+ "fields": [
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number "
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buissness_segment",
+   "fieldtype": "Data",
+   "label": "Buissness Segment "
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address "
+  },
+  {
+   "fieldname": "column_break_fahc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vat_number",
+   "fieldtype": "Int",
+   "label": "Vat Number "
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch "
+  },
+  {
+   "fieldname": "applicable_for_points",
+   "fieldtype": "Select",
+   "label": "Applicable For Points",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "date_of_creation",
+   "fieldtype": "Date",
+   "label": "Date Of Creation",
+   "options": "Today"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-05 10:46:50.374947",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Client Opening Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
